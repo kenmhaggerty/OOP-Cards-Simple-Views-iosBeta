@@ -42,26 +42,43 @@
                                 <rect key="frame" x="28" y="617" width="30" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="threeOfSpadesButton"/>
                                 <state key="normal" title="♠️3"/>
+                                <connections>
+                                    <action selector="changeCard:" destination="5Nb-VI-X55" eventType="touchUpInside" id="7dU-bq-zbn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfz-4V-a68">
                                 <rect key="frame" x="314" y="617" width="36" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="tenOfHeartsButton"/>
                                 <state key="normal" title="♥️10"/>
+                                <connections>
+                                    <action selector="changeCard:" destination="5Nb-VI-X55" eventType="touchUpInside" id="bYn-ZI-63q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aON-Om-WhW">
                                 <rect key="frame" x="218" y="617" width="30" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="eightOfDiamondsButton"/>
                                 <state key="normal" title="♦️8"/>
+                                <connections>
+                                    <action selector="changeCard:" destination="5Nb-VI-X55" eventType="touchUpInside" id="LyE-2O-RZU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6Z-5S-5B2">
                                 <rect key="frame" x="123" y="617" width="30" height="30"/>
                                 <accessibility key="accessibilityConfiguration" label="fourOfClubsButton"/>
                                 <state key="normal" title="♣️4"/>
+                                <connections>
+                                    <action selector="changeCard:" destination="5Nb-VI-X55" eventType="touchUpInside" id="Yru-RB-hXb"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bottomLabel" destination="Mve-7Y-fcL" id="2hR-uP-PLc"/>
+                        <outlet property="middleLabel" destination="Ogn-li-Mwm" id="XCg-fw-LEw"/>
+                        <outlet property="topLabel" destination="gq8-aY-JTW" id="bTL-bZ-IuT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kua-Xw-qOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
